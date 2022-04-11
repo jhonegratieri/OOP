@@ -13,7 +13,7 @@ class People:
         elif data.lower() == 'height':
             return self.__height
         else:
-            return print('Invalid parameter.')
+            return 'Invalid parameter.'
 
     def set_method(self, data, new_value):
         if data.lower() == 'name':
@@ -34,3 +34,4 @@ people = People('Gabriella', 27, 1.59)
 print(people.get_method('name'))
 people.set_method('name', 'Gabi')
 print(people.get_method('name'))
+print(people.get_method('nae'))
