@@ -1,5 +1,5 @@
 
-class People:
+class Person:
 
     def __init__(self, name, age, height):
         self.__name = name
@@ -28,8 +28,8 @@ class People:
         return self.__height
 
 
-people = People('Gabriella', 27, 1.59)
+person = Person('Gabriella', 27, 1.59)
 
-print(people.get_name())
-people.set_name('Gabsteka')
-print(people.get_name())
+print(person.get_name())
+person.set_name('Gabsteka')
+print(person.get_name())
