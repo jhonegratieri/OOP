@@ -1,3 +1,4 @@
+
 class People:
 
     def __init__(self, name, age, height):
@@ -5,33 +6,30 @@ class People:
         self.__age = age
         self.__height = height
 
-    def get_method(self, data):
-        if data.lower() == 'name':
-            return self.__name
-        elif data.lower() == 'age':
-            return self.__age
-        elif data.lower() == 'height':
-            return self.__height
-        else:
-            return 'Invalid parameter.'
+    def get_name(self):
+        return self.__name
+    
+    def get_age(self):
+        return self.__age
 
-    def set_method(self, data, new_value):
-        if data.lower() == 'name':
-            self.__name = str(new_value)
-            return self.__name
-        elif data.lower() == 'age':
-            self.__age = new_value
-            return self.__age
-        elif data.lower() == 'height':
-            self.__height = new_value
-            return self.__height
-        else:
-            return print('Invalid parameter.')
+    def get_height(self):
+        return self.__height
+    
+    def set_name(self, value):
+        self.__name = str(value)
+        return self.__name
+
+    def set_age(self, value):
+        self.__age = value
+        return self.__age
+
+    def set_height(self, value):
+        self.__height = value
+        return self.__height
 
 
 people = People('Gabriella', 27, 1.59)
 
-print(people.get_method('name'))
-people.set_method('name', 'Gabi')
-print(people.get_method('name'))
-print(people.get_method('nae'))
+print(people.get_name())
+people.set_name('Gabsteka')
+print(people.get_name())
